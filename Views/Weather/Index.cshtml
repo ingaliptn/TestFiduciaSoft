@@ -1,0 +1,12 @@
+﻿@model WeatherForecast
+
+<h2>Weather Forecast for @Model.City</h2>
+
+<p>Precipitation: @Model.Precipitation</p>
+<p>Highest Temperature: @Model.MaxTemperature °C</p>
+<p>Lowest Temperature: @Model.MinTemperature °C</p>
+
+@if (Model.RainWarning)
+{
+    <script>alert("Warning: Rain is forecasted for today.")</script>
+}
